@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meltoween</title>
+</head>
+
+<style>
+
+/***********************/
+/* START OF GLOBAL STYLES */
+/***********************/
+
+body {
+    Margin: 0;
+    padding: 0;
+}
+
+table {
+    border-spacing: 0;
+}
+
+td {
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+h4 {
+    text-transform: uppercase;
+}
+
+h2, p {
+    color: #FFFFFF;
+}
+
+p {
+    font-size: 16px;
+}
+
+/***********************/
+/* END OF SECTION STYLES */
+/***********************/
+
+/***********************/
+/* START OF CUSTOM-CLASS STYLES */
+/***********************/
+
+.wrapper {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.webkit {
+    max-width: 650px;
+}
+
+.outer {
+    Margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
+    border-spacing: 0;
+    font-family: sans-serif;
+}
+
+.food-mobile {
+    display: none;
+}
+
+.who-mobile {
+    display: none;
+}
+
+.costume-contest {
+    background-color: #ff821d;
+}
+
+.chicken-cop-desktop {
+    margin-bottom: -4px;
+    padding-top: 20px;
+}
+
+.chicken-cop-mobile {
+    display: none;
+}
+
+.pumpkin-bakeOff {
+    background-color: #e67112;
+}
+
+.pumpkin-bakeOff h2 {
+    padding-top: 30px;
+}
+
+.cupcake {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 25px;
+}
+
+.cupcake-mobile {
+    display: none;
+}
+
+.fun-for-family {
+    background-color: #cd6511;
+    padding-bottom: 20px;
+}
+
+.fun-for-family h2 {
+    padding-top: 30px;
+}
+
+.rockstar-kid-desktop {
+    padding-top: 40px;
+    margin-bottom: -24px;
+}
+
+.rockstar-kid-mobile {
+    display: none;
+}
+
+.column {
+    width: 100%;
+    max-width: 370px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.right-column {
+    margin-left: -150px;
+}
+
+.orange-columns {
+    width: 100%;
+    max-width: 650px;
+}
+
+.column-bottom {
+    width: 100%;
+    max-width: 650px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.left-graphic {
+    padding-top: 192px;
+    padding-left: 0;
+}
+
+.right-graphic {
+    margin-top: -179px;
+    margin-left: 324px;
+    padding-left: 62px;
+}
+
+.center-graphic {
+    padding-left: 265px;
+    margin-top: -161px;
+}
+
+/***********************/
+/* END OF CUSTOM-CLASS STYLES */
+/***********************/
+
+/***********************/
+/* START OF SECTION STYLES */
+/***********************/
+
+.hero-section {
+    margin-bottom: -4px;
+}
+
+.second-section {
+    background-color: #8eb832;
+    max-width: 650px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+.second-section h2 {
+    font-size: 38px;
+    font-weight: normal;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.second-section h4 {
+    font-size: 18px;
+    color: #462856;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.second-section p {
+    margin-top: 0;
+    padding-top: 5px;
+}
+
+.third-section {
+    background-color: #373737;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.third-section-heading {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ff821d;
+}
+
+.third-section-orange {
+    color: #ff821d;
+}
+
+.fifth-section {
+    background-image: url(https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/movie.png);
+    background-repeat: no-repeat;
+    width: 650px;
+    height: 100%;
+    max-width: 650px;
+}
+
+.fifth-section p {
+    font-size: 18px;
+}
+
+.fourth-section .content {
+    padding-left: 30px;
+}
+
+.fourth-section h2 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.fifth-section .content {
+    padding-left: 30px;
+}
+
+.fifth-section h2 {
+    font-size: 28px;
+}
+
+.footer-section {
+    padding-top: 0;
+    margin-top: -40px;
+    padding-bottom: 50px;
+}
+
+
+
+/***********************/
+/* END OF SECTION STYLES */
+/***********************/
+
+
+/***********************/
+/* START OF MEDIA QUERIES */
+/***********************/
+
+
+@media screen and (max-width: 768px) {
+
+    body, html {
+        max-width: 700px;
+        Margin: 0 auto;
+        padding: 0;
+    }
+
+    table {
+        max-width: 700px;
+    }
+
+    .hero-section {
+        max-width: 700px;
+    }
+
+    .orange-columns {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body, html {
+        max-width: 100%;
+        Margin: 0 auto;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    table {
+        width: 100%;
+        max-width: 640px;
+    }
+
+    .hero-section {
+        max-width: 640px;
+    }
+
+    .second-section h2 {
+        font-size: 28px;
+        font-weight: normal;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .second-section {
+        background-color: #8eb832;
+        max-width: 640px !important;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    .second-section .content {
+        margin-left: 0;
+        padding-right: 0;
+    }
+
+    .right-column {
+        margin-left: 0;
+        margin-top: -20px;
+        padding-top: 0;
+    }
+
+    .column {
+        width: 100%;
+        max-width: 640px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .fifth-section {
+        background-image: url(https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/movie-mobile.png) !important;
+        background-repeat: no-repeat;
+        background-size: 640px 300px;
+    }
+
+    .left-graphic {
+        margin-top: -10px;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    body, html {
+        max-width: 100%;
+        Margin: 0 auto;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    table {
+        width: 100%;
+        max-width: 425px;
+    }
+
+    .webkit {
+        width: 100% !important;
+    }
+    
+    .outer {
+        Margin: 0 auto;
+        width: 100% !important;
+        border-spacing: 0;
+        font-family: sans-serif;
+    }
+
+    .hero-section {
+        max-width: 425px;
+    }
+
+    .second-section {
+        background-color: #8eb832;
+        max-width: 425px !important;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    .second-section h2 {
+        font-size: 28px;
+        font-weight: normal;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .food-desktop {
+        display: none;
+    }
+
+    .food-mobile {
+        display: table-row-group;
+    }
+
+    .who-desktop {
+        display: none;
+    }
+
+    .who-mobile {
+        display: table-row-group;
+    }
+
+    .right-column {
+        margin-left: 0;
+        margin-top: -20px;
+        padding-top: 0;
+    }
+
+    .third-section {
+        padding-top: 7px;
+        padding-bottom: 5px;
+    }
+
+    .fourth-section h2 {
+        vertical-align: top;
+    }
+
+    .orange-columns {
+        max-width: 100%;
+    }
+
+    .orange-columns h2{
+        margin-top: 0;
+        padding-top: 30px;
+    }
+
+    .orange-columns p {
+        width: 85%;
+    }
+
+    .chicken-cop-desktop {
+        display: none;
+    }
+
+    .chicken-cop-mobile {
+        display: table-footer-group;
+        margin: 0 auto;
+    }
+
+    .cupcake-desktop {
+        display: none;
+    }
+
+    .cupcake-mobile {
+        display: table-footer-group;
+        margin: 0 auto;
+    }
+
+    .rockstar-kid-desktop {
+        display: none;
+    }
+
+    .rockstar-kid-mobile {
+        display: table-footer-group;
+        margin: 0 auto;
+    }
+
+    .fun-for-family {
+        padding-bottom: 0;
+    }
+
+    .column {
+        width: 100%;
+        max-width: 425px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .fourth-section table {
+        vertical-align: middle;
+    }
+
+    .fifth-section {
+        background-image: url(https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/movie-mobile.png) !important;
+        background-repeat: no-repeat;
+        background-size: 425px 197px;
+    }
+
+    .fifth-section .content {
+        padding-left: 20px;
+    }
+
+    .fifth-section h2 {
+        font-size: 22px;
+    }
+
+    .fifth-section p {
+        width: 50%;
+    }
+
+
+    .mobile-left-graphic {
+        width: 175px;
+    }
+
+    .left-graphic {
+        margin-top: -120px;
+        margin-left: -1px;
+    }
+
+    .mobile-center-graphic {
+        width: 81px;
+    }
+
+    .center-graphic {
+        padding-left: 170px;
+        margin-top: -109px;
+    }
+
+    .mobile-right-graphic {
+        width: 175px;
+    }
+
+    .right-graphic {
+        margin-top: -126px;
+        margin-left: 188px;
+    }
+
+    .footer-section {
+        max-width: 425px;
+        margin-top: -41px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    body, html {
+        max-width: 100%;
+        Margin: 0 auto;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    table {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .hero-section {
+        max-width: 320px;
+    }
+
+    .second-section {
+        background-color: #8eb832;
+        max-width: 320px !important;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    .column {
+        width: 100%;
+        max-width: 320px;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .fifth-section {
+        background-image: url(https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/movie-mobile.png) !important;
+        background-repeat: no-repeat;
+        background-size: 320px 197px;
+    }
+
+    .mobile-left-graphic {
+        width: 140px;
+    }
+
+    .left-graphic {
+        margin-top: -120px;
+        margin-left: -5px;
+    }
+
+    .mobile-center-graphic {
+        width: 81px;
+    }
+
+    .center-graphic {
+        padding-left: 120px;
+        margin-top: -87px;
+    }
+
+    .mobile-center-graphic {
+        width: 70px;
+    }
+
+    .mobile-right-graphic {
+        width: 140px;
+    }
+
+    .right-graphic {
+        margin-top: -105px;
+        margin-left: 127px;
+    }
+
+    .footer-section {
+        max-width: 320px;
+        margin-top: -41px;
+    }
+}
+
+
+/***********************/
+/* END OF MEDIA QUERIES */
+/***********************/
+
+</style>
+
+
+<body>
+    <center class="wrapper">
+      <div class="webkit">
+        <table class="outer" align="center">
+          <tr>
+            <td class="hero-image">
+              <a href="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/banner.png">
+                <img class="hero-section" width="650px" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/banner.png" alt="Meltoween Banner">
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table width="100%" style="border-spacing:0;">
+                <tr>
+                  <td class="second-section">
+                    <h4>What!</h4>
+                    <h2>7th Annual Meltoween Party!</h2>
+                    <table class="column">
+                      <tr>
+                        <td>
+                          <table class="content">
+                            <tr>
+                              <td>
+                                <h4>When:</h4>
+                                <p>Thursday, October 29th</p>
+                                <h4 class="food-mobile">Food:</h4>
+                                <p class="food-mobile">Spinato's Pizza & Salad & Pumpkin Foods?</p>
+                                <h4>Time:</h4>
+                                <p>5pm (till whenever)</p>
+                                <h4 class="who-mobile">Who:</h4>
+                                <p class="who-mobile">meltfolks + significant other +/- kids</p>
+                                <h4>Where:</h4>
+                                <p>meltEast</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class="column right-column">
+                      <tr>
+                        <td>
+                          <table class="content">
+                            <tr>
+                              <td>
+                                <h4 class="food-desktop">Food:</h4>
+                                <p class="food-desktop">Spinato's Pizza & Salad & Pumpkin Foods?</p>
+                                <h4 class="who-desktop">Who:</h4>
+                                <p class="who-desktop">meltfolks + significant other +/- kids</p>
+                                <h4>Attire:</h4>
+                                <p>Costumes of course (prefferred, but not required)</p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table width="100%" style="border-spacing:0;">
+                <tr>
+                  <td class="third-section">
+                    <p><span class="third-section-heading">Plan Ahead!</span><span class="third-section-orange"> this event starts at 5pm. </span>If you need time to get in costume or pick up your family or both etc. then you should consider flexing for half of the day. First check with your supervisor for approval.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table width="100%" style="border-spacing:0;">
+                <tr>
+                  <td class="fourth-section">
+                    <table class="orange-columns costume-contest">
+                      <tr>
+                        <td>
+                          <table class="content">
+                            <tr>
+                              <td>
+                                <h2>Costume Contest</h2>
+                                <p>Duhh, of course - Wear it all day if you wanna. Perhaps you will be the winner of the contest? (must be present at party to be voted on) We'll hold a kid contest too!</p>
+                              </td>
+                              <td>
+                                <a href="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/costumes.png"><img class="chicken-cop-desktop" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/costumes.png" alt="Cop Chasing"></a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class="content">
+                            <tr>
+                              <td>
+                                <a href="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/costumes.png"><img class="chicken-cop-mobile" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/costumes.png" alt="Cop Chasing"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class="orange-columns pumpkin-bakeOff">
+                      <tr>
+                        <td>
+                          <table class="content">
+                            <tr>
+                              <td>
+                                <h2>Pumpkin Flavored Bake Off</h2>
+                                <p>Only requirement is that pumpkin is used. So bring a dessert or savory dish to be enjoyed (then judged). There will be several categories you could win...ie: best dessert, best  savory dish, best presentation, most unique...perhaps a few others. So be creative! (We'll make sure there is room in the fridges to store your items till party time...so MPR, no nibbling!)</p>
+                              </td>
+                              <td>
+                                <a href="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/cupcake.png"><img class="cupcake-desktop" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/cupcake.png" alt="Pumpkin Cupcakes"></a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class="content">
+                            <tr>
+                              <td>
+                                <a href="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/cupcake.png"><img class="cupcake-mobile" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/cupcake.png" alt="Pumpkin Cupcakes"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class="orange-columns fun-for-family">
+                      <tr>
+                        <td>
+                          <table class="content">
+                            <tr>
+                              <td>
+                                <h2>Fun for the whole family!</h2>
+                                <p>Coloring Contest, Pumpkin Bowling, Spider Hide and Seek, Donut/Scooter Races, & More...</p>
+                                <p>Don't forget there's melt Corn Hole & the fun Photo Booth too.</p>
+                              </td>
+                              <td>
+                                <a href="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/rockstar-kid.png"><img class="rockstar-kid-desktop" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/rockstar-kid.png" alt="Kid in rockstar costume"></a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class="content">
+                            <tr>
+                              <td>
+                                <a href="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/rockstar-kid.png"><img class="rockstar-kid-mobile" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/rockstar-kid.png" alt="Kid in rockstar costume"></a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table width="100%" style="border-spacing:0;">
+                <tr>
+                  <td>
+                    <table class="fifth-section">
+                      <tr>
+                        <td>
+                          <table class="content">
+                            <tr>
+                              <td>
+                                <h2>The Featured Movie</h2>
+                                <p>Nightmare Before Christmas</p>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class="left-graphic column-bottom">
+                            <tr>
+                              <td>
+                                <a href="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/left.png">
+                                  <img class="mobile-left-graphic" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/left.png" alt="">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class="center-graphic column-bottom">
+                            <tr>
+                              <td>
+                                <a href="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/rsvp.png">
+                                  <img class="mobile-center-graphic" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/rsvp.png" alt="">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class="right-graphic column-bottom">
+                            <tr>
+                              <td>
+                                <a href="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/right.png">
+                                  <img class="mobile-right-graphic" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/right.png" alt="">
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/footer.png">
+                <img class="footer-section" width="650px" src="https://mandrill-emails.s3.amazonaws.com/melt-holidays/20151021/footer.png" alt="Meltoween Banner">
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+</body>
+</html>
